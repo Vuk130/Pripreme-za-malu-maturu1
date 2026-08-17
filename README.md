@@ -2,14 +2,18 @@
 <html lang="sr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Pripreme za prijemni — Blok 70</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pripreme Učionica | Pripreme za prijemni na Novom Beogradu</title>
+
+<meta name="description" content="Pripreme Učionica – profesionalne pripreme za prijemni na Novom Beogradu, Blok 70. Srpski jezik, matematika i izborni predmeti. Časovi traju 90 minuta i održavaju se i vikendom.">
+<meta name="keywords" content="Pripreme Učionica, pripreme za prijemni, Novi Beograd, Blok 70, matematika, srpski jezik, izborni predmeti">
 
 <style>
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 html{
@@ -18,28 +22,29 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#f7f9fc;
-    color:#172033;
+    background:#f3f7ff;
+    color:#111827;
     line-height:1.6;
 }
 
 a{
     text-decoration:none;
-    color:inherit;
 }
 
 .container{
-    width:min(1120px,92%);
+    width:min(1150px,92%);
     margin:auto;
 }
+
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
-    z-index:100;
-    background:rgba(255,255,255,.94);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid #e8ebf2;
+    z-index:999;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #dce5f5;
 }
 
 .nav{
@@ -51,215 +56,233 @@ header{
 }
 
 .logo{
-    font-size:22px;
-    font-weight:800;
-    color:#175cff;
+    font-size:23px;
+    font-weight:900;
+    color:#1455d9;
 }
 
 .logo span{
-    color:#172033;
+    color:#111827;
 }
 
 nav{
     display:flex;
-    gap:25px;
+    gap:26px;
 }
 
 nav a{
+    color:#4b5870;
     font-size:14px;
     font-weight:700;
-    color:#536078;
+    transition:.2s;
 }
 
 nav a:hover{
-    color:#175cff;
+    color:#1455d9;
 }
 
 .btn{
     display:inline-flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     padding:14px 22px;
-    border-radius:12px;
+    border-radius:13px;
     font-weight:800;
-    border:2px solid transparent;
-    transition:.2s;
+    transition:.25s;
 }
 
 .btn-primary{
-    background:#175cff;
+    background:#1455d9;
     color:white;
+    box-shadow:0 10px 25px rgba(20,85,217,.25);
 }
 
 .btn-primary:hover{
-    transform:translateY(-2px);
-    box-shadow:0 12px 28px rgba(23,92,255,.25);
+    transform:translateY(-3px);
+    box-shadow:0 16px 35px rgba(20,85,217,.32);
 }
 
-.btn-light{
+.btn-white{
     background:white;
-    border-color:#dfe5ef;
+    color:#1455d9;
 }
+
+/* HERO */
 
 .hero{
-    padding:100px 0 80px;
+    min-height:720px;
+    display:flex;
+    align-items:center;
     background:
-        radial-gradient(circle at 85% 20%,#dce7ff 0,transparent 35%),
-        linear-gradient(180deg,#fff,#f7f9fc);
+        radial-gradient(circle at 85% 15%,rgba(54,121,255,.45),transparent 28%),
+        radial-gradient(circle at 10% 90%,rgba(72,203,255,.28),transparent 30%),
+        linear-gradient(135deg,#071a3a,#103c87 55%,#1677d2);
+    color:white;
+    overflow:hidden;
 }
 
 .hero-grid{
     display:grid;
     grid-template-columns:1.1fr .9fr;
+    gap:65px;
     align-items:center;
-    gap:70px;
 }
 
 .badge{
     display:inline-block;
-    padding:8px 13px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.25);
+    padding:9px 15px;
     border-radius:50px;
-    background:#e9f0ff;
-    color:#175cff;
     font-size:13px;
     font-weight:800;
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
-h1{
-    font-size:clamp(42px,6vw,70px);
+.hero h1{
+    font-size:clamp(43px,6vw,72px);
     line-height:1.02;
-    letter-spacing:-2.5px;
-    margin-bottom:24px;
+    letter-spacing:-3px;
+    margin-bottom:25px;
 }
 
-h1 span{
-    color:#175cff;
+.hero h1 span{
+    color:#63d8ff;
 }
 
-.hero p{
-    color:#5d687d;
+.hero-text{
     font-size:18px;
-    max-width:620px;
-    margin-bottom:30px;
+    color:#dceaff;
+    max-width:650px;
+    margin-bottom:32px;
 }
 
 .actions{
     display:flex;
-    gap:12px;
+    gap:13px;
     flex-wrap:wrap;
 }
 
 .hero-card{
-    background:white;
-    border:1px solid #e5eaf2;
-    border-radius:26px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(15px);
+    border-radius:28px;
     padding:30px;
-    box-shadow:0 25px 70px rgba(23,32,51,.1);
+    box-shadow:0 25px 70px rgba(0,0,0,.2);
 }
 
 .hero-card h3{
-    font-size:24px;
+    font-size:25px;
     margin-bottom:20px;
 }
 
-.info{
+.quick{
     display:flex;
+    align-items:center;
     gap:15px;
-    align-items:flex-start;
-    padding:15px 0;
-    border-bottom:1px solid #edf0f5;
+    padding:16px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
 }
 
-.info:last-child{
+.quick:last-child{
     border-bottom:0;
 }
 
-.icon{
-    width:42px;
-    height:42px;
+.quick-icon{
+    width:45px;
+    height:45px;
     display:grid;
     place-items:center;
-    background:#edf3ff;
-    color:#175cff;
-    border-radius:12px;
+    border-radius:13px;
+    background:#63d8ff;
+    color:#092052;
     font-weight:900;
 }
 
-.info strong{
+.quick strong{
     display:block;
 }
 
-.info small{
-    color:#6a7487;
+.quick small{
+    color:#c8d9f4;
 }
 
+/* SECTIONS */
+
 section{
-    padding:90px 0;
+    padding:95px 0;
 }
 
 .section-head{
-    max-width:700px;
-    margin-bottom:45px;
+    max-width:720px;
+    margin-bottom:48px;
 }
 
-.section-head.center{
+.center{
+    text-align:center;
     margin-left:auto;
     margin-right:auto;
-    text-align:center;
 }
 
 .label{
-    color:#175cff;
+    color:#1455d9;
+    text-transform:uppercase;
     font-size:13px;
     font-weight:900;
     letter-spacing:1.5px;
-    text-transform:uppercase;
     margin-bottom:12px;
 }
 
 h2{
-    font-size:clamp(32px,5vw,50px);
-    line-height:1.1;
-    letter-spacing:-1.5px;
-    margin-bottom:16px;
+    font-size:clamp(34px,5vw,52px);
+    line-height:1.08;
+    letter-spacing:-1.8px;
+    margin-bottom:17px;
 }
 
 .section-head p{
-    color:#69758a;
+    color:#637089;
     font-size:17px;
 }
 
-.grid{
+/* SUBJECTS */
+
+.subjects{
+    background:white;
+}
+
+.cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:22px;
 }
 
 .card{
-    background:white;
-    border:1px solid #e5eaf2;
-    border-radius:20px;
-    padding:28px;
+    background:#f8faff;
+    border:1px solid #dce6f5;
+    border-radius:22px;
+    padding:30px;
     transition:.25s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 20px 45px rgba(23,32,51,.08);
+    transform:translateY(-7px);
+    border-color:#a9c6ff;
+    box-shadow:0 20px 45px rgba(20,85,217,.1);
 }
 
 .card-icon{
-    width:54px;
-    height:54px;
+    width:58px;
+    height:58px;
     display:grid;
     place-items:center;
-    border-radius:15px;
-    background:#175cff;
+    border-radius:16px;
+    background:linear-gradient(135deg,#1455d9,#4dbfff);
     color:white;
-    font-size:22px;
+    font-size:23px;
     font-weight:900;
-    margin-bottom:20px;
+    margin-bottom:21px;
 }
 
 .card h3{
@@ -268,69 +291,131 @@ h2{
 }
 
 .card p{
-    color:#69758a;
+    color:#68758c;
 }
 
-.test-section{
-    background:#101827;
-    color:white;
+/* WHY */
+
+.why{
+    background:#eef5ff;
 }
 
-.test-section .section-head p{
-    color:#aeb8c9;
-}
-
-.test-box{
+.why-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
 }
 
-.test-card{
-    border:1px solid #29354a;
-    background:#182235;
+.why-card{
+    background:white;
     border-radius:20px;
-    padding:28px;
+    padding:27px;
+    border:1px solid #dbe6f7;
 }
 
-.test-card h3{
-    margin-bottom:12px;
-    font-size:23px;
+.why-card strong{
+    display:block;
+    font-size:20px;
+    margin-bottom:7px;
 }
 
-.test-card p{
-    color:#b8c1d0;
+.why-card p{
+    color:#68758c;
+}
+
+/* TEACHERS */
+
+.teachers{
+    background:white;
+}
+
+.teacher-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
 }
 
 .teacher{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    margin-top:15px;
+    padding:30px;
+    border-radius:23px;
+    background:linear-gradient(145deg,#f7faff,#edf5ff);
+    border:1px solid #d8e5f8;
 }
 
 .avatar{
-    width:62px;
-    height:62px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
     display:grid;
     place-items:center;
-    border-radius:50%;
-    background:#eaf0ff;
-    color:#175cff;
-    font-size:20px;
+    background:linear-gradient(135deg,#1455d9,#52cfff);
+    color:white;
+    font-size:21px;
     font-weight:900;
+    margin-bottom:20px;
 }
 
-.teacher strong{
-    display:block;
+.teacher h3{
+    font-size:25px;
+    margin-bottom:4px;
 }
 
-.teacher span{
-    color:#68758a;
-    font-size:14px;
+.subject-name{
+    color:#1455d9;
+    font-weight:800;
+    margin-bottom:14px;
 }
+
+.teacher p{
+    color:#68758c;
+}
+
+/* TESTS */
+
+.tests{
+    background:
+        radial-gradient(circle at 80% 20%,rgba(73,161,255,.22),transparent 30%),
+        #071a3a;
+    color:white;
+}
+
+.tests .label{
+    color:#63d8ff;
+}
+
+.tests .section-head p{
+    color:#b8cae5;
+}
+
+.test-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.test-card{
+    padding:30px;
+    background:#10284f;
+    border:1px solid #294b7d;
+    border-radius:22px;
+}
+
+.test-card h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.test-card p{
+    color:#b9cbe5;
+}
+
+/* SCHEDULE */
 
 .schedule{
+    background:#f5f8ff;
+}
+
+.schedule-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
@@ -338,101 +423,136 @@ h2{
 
 .schedule-card{
     background:white;
-    border:1px solid #e5eaf2;
-    border-radius:20px;
     padding:28px;
+    border-radius:20px;
+    border:1px solid #dce6f5;
 }
 
-.schedule-card strong{
-    display:block;
-    color:#175cff;
-    margin-bottom:8px;
+.schedule-card .big{
+    color:#1455d9;
+    font-size:24px;
+    font-weight:900;
+    margin:7px 0;
 }
 
 .schedule-card p{
-    color:#69758a;
+    color:#68758c;
 }
+
+/* LOCATION */
 
 .location{
-    background:#eaf0ff;
+    background:linear-gradient(135deg,#dceaff,#f3fbff);
 }
 
-.location-box{
+.location-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:30px;
     align-items:center;
 }
 
-.location-info{
-    background:white;
-    padding:35px;
-    border-radius:24px;
-    box-shadow:0 18px 50px rgba(23,32,51,.08);
+.location h2{
+    max-width:550px;
 }
 
-.location-info p{
-    color:#69758a;
-    margin:12px 0 25px;
+.location-text{
+    color:#627089;
+    font-size:17px;
+    margin-bottom:27px;
 }
+
+.location-box{
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 20px 55px rgba(20,85,217,.12);
+}
+
+.location-box h3{
+    font-size:27px;
+    margin-bottom:7px;
+}
+
+.location-box p{
+    color:#68758c;
+    margin-bottom:20px;
+}
+
+.phone{
+    color:#1455d9;
+    font-size:29px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+/* CONTACT */
 
 .contact{
-    background:#175cff;
-    color:white;
     text-align:center;
+    background:linear-gradient(135deg,#1455d9,#18a4e8);
+    color:white;
+}
+
+.contact .label{
+    color:#bfeeff;
+}
+
+.contact h2{
+    margin-bottom:15px;
 }
 
 .contact p{
+    color:#e0f3ff;
     max-width:650px;
     margin:0 auto 28px;
-    color:#dce6ff;
 }
 
-.contact .btn-light{
-    color:#172033;
-}
+/* FOOTER */
 
 footer{
+    background:#061329;
+    color:#9fb0c9;
     padding:30px 0;
-    background:#0c1320;
-    color:#9da8ba;
     text-align:center;
     font-size:14px;
 }
 
-.phone{
-    font-size:27px;
-    font-weight:900;
-    color:#175cff;
-}
+/* MOBILE */
 
-@media(max-width:800px){
+@media(max-width:850px){
 
     nav{
         display:none;
     }
 
     .hero{
-        padding:70px 0;
+        padding:75px 0;
     }
 
     .hero-grid,
-    .test-box,
-    .location-box{
+    .location-grid{
         grid-template-columns:1fr;
     }
 
-    .grid,
-    .schedule{
+    .cards,
+    .teacher-grid,
+    .test-grid,
+    .schedule-grid,
+    .why-grid{
         grid-template-columns:1fr;
-    }
-
-    h1{
-        letter-spacing:-1.5px;
     }
 
     section{
-        padding:65px 0;
+        padding:70px 0;
+    }
+
+    .hero h1{
+        letter-spacing:-1.8px;
+    }
+
+    .hero-card{
+        margin-top:15px;
     }
 }
 </style>
@@ -443,27 +563,27 @@ footer{
 <header>
 <div class="container nav">
 
-<a class="logo" href="#">
-Pripreme<span>70</span>
+<a href="#" class="logo">
+Pripreme <span>Učionica</span>
 </a>
 
 <nav>
 <a href="#predmeti">Predmeti</a>
 <a href="#nastavnici">Nastavnici</a>
 <a href="#testovi">Testovi</a>
+<a href="#lokacija">Lokacija</a>
 <a href="#kontakt">Kontakt</a>
 </nav>
 
-<a class="btn btn-primary" href="tel:0629656676">
+<a href="tel:0629656676" class="btn btn-primary">
 Pozovi
 </a>
 
 </div>
 </header>
 
-<main>
-
 <section class="hero">
+
 <div class="container hero-grid">
 
 <div>
@@ -473,25 +593,27 @@ PRIPREME ZA PRIJEMNI ISPIT
 </div>
 
 <h1>
-Spremi se za prijemni
-<span>sigurno i kvalitetno.</span>
+Pripremi se za prijemni
+<span>na Novom Beogradu.</span>
 </h1>
 
-<p>
-Profesionalne pripreme iz srpskog jezika,
-matematike i izbornih predmeta.
-Radimo zadatke, testove i vežbe koje
-pomažu učenicima da budu spremni za prijemni.
+<p class="hero-text">
+Pripreme Učionica pružaju kvalitetnu pripremu
+iz srpskog jezika, matematike i izbornih predmeta.
+Na časovima se rade zadaci, testovi i vežbe
+uz profesionalan pristup nastavnika.
 </p>
 
 <div class="actions">
-<a class="btn btn-primary" href="#kontakt">
-Zakaži čas →
+
+<a href="#kontakt" class="btn btn-white">
+Prijavi se →
 </a>
 
-<a class="btn btn-light" href="#predmeti">
+<a href="#predmeti" class="btn" style="border:1px solid rgba(255,255,255,.3);color:white;">
 Pogledaj predmete
 </a>
+
 </div>
 
 </div>
@@ -499,38 +621,38 @@ Pogledaj predmete
 <div class="hero-card">
 
 <h3>
-Brze informacije
+Zašto Pripreme Učionica?
 </h3>
 
-<div class="info">
-<div class="icon">⏱</div>
+<div class="quick">
+<div class="quick-icon">90</div>
 <div>
 <strong>90 minuta</strong>
-<small>Trajanje jednog časa</small>
+<small>Trajanje časa</small>
 </div>
 </div>
 
-<div class="info">
-<div class="icon">📚</div>
-<div>
-<strong>Više predmeta</strong>
-<small>Srpski, matematika i izborni</small>
-</div>
-</div>
-
-<div class="info">
-<div class="icon">📝</div>
+<div class="quick">
+<div class="quick-icon">✓</div>
 <div>
 <strong>Testovi i zadaci</strong>
-<small>Vežbanje kroz konkretne primere</small>
+<small>Praktičan rad na časovima</small>
 </div>
 </div>
 
-<div class="info">
-<div class="icon">📍</div>
+<div class="quick">
+<div class="quick-icon">★</div>
+<div>
+<strong>Profesionalni nastavnici</strong>
+<small>Fokus na kvalitetnu pripremu</small>
+</div>
+</div>
+
+<div class="quick">
+<div class="quick-icon">📍</div>
 <div>
 <strong>Blok 70</strong>
-<small>Novi Beograd</small>
+<small>Na Novom Beogradu</small>
 </div>
 </div>
 
@@ -539,78 +661,155 @@ Brze informacije
 </div>
 </section>
 
-<section id="predmeti">
+<section class="subjects" id="predmeti">
 
 <div class="container">
 
 <div class="section-head center">
-<div class="label">Predmeti</div>
+
+<div class="label">Program</div>
 
 <h2>
-Sve što ti je potrebno
-za prijemni.
+Predmeti koje možeš
+da pripremaš
 </h2>
 
 <p>
-Fokusirani časovi, zadaci i testovi
-za bolju pripremu.
+Od osnovnog gradiva do testova i zadataka
+za što bolju pripremu za prijemni.
 </p>
+
 </div>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
+
 <div class="card-icon">A</div>
+
 <h3>Srpski jezik</h3>
+
 <p>
-Rad na zadacima, testovima i oblastima
-koje su važne za prijemni ispit.
+Rad na gradivu, zadacima i testovima
+uz pripremu usmerenu na prijemni ispit.
 </p>
+
 </div>
 
 <div class="card">
+
 <div class="card-icon">∑</div>
+
 <h3>Matematika</h3>
+
 <p>
-Vežbanje zadataka i testova uz
-objašnjenja i sistematičan rad.
+Detaljno objašnjenje gradiva, rešavanje
+zadataka i rad na testovima.
 </p>
+
 </div>
 
 <div class="card">
+
 <div class="card-icon">✓</div>
+
 <h3>Izborni predmeti</h3>
+
 <p>
-Priprema i za izborni predmet koji
-učenik odabere za prijemni.
+Priprema iz izbornog predmeta koji učenik
+odabere za prijemni ispit.
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<section id="nastavnici">
+<section class="why">
 
 <div class="container">
 
-<div class="section-head">
-<div class="label">Nastavnici</div>
+<div class="section-head center">
+
+<div class="label">Kako radimo</div>
 
 <h2>
-Iskusni i profesionalni
-nastavnici.
+Više od običnog časa.
 </h2>
 
 <p>
-Rad je usmeren na razumevanje gradiva,
-redovno vežbanje i što bolju pripremu učenika.
+Cilj je da učenik razume gradivo,
+uvežba zadatke i bude sigurniji pred prijemni.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<strong>📝 Rad na testovima</strong>
+<p>
+Učenici rade testove i zadatke kako bi
+proverili svoje znanje i uočili oblasti
+na kojima treba dodatno da rade.
 </p>
 </div>
 
-<div class="grid">
+<div class="why-card">
+<strong>🎯 Fokus na prijemni</strong>
+<p>
+Časovi su usmereni na sistematičnu
+pripremu i vežbanje gradiva potrebnog
+za prijemni ispit.
+</p>
+</div>
 
-<div class="card">
+<div class="why-card">
+<strong>⏱️ 90 minuta rada</strong>
+<p>
+Jedan čas traje sat i po, što ostavlja
+dovoljno vremena za objašnjenje i vežbu.
+</p>
+</div>
+
+<div class="why-card">
+<strong>📅 Časovi vikendom</strong>
+<p>
+Pripreme se održavaju i vikendom,
+što omogućava lakše uklapanje u raspored.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="teachers" id="nastavnici">
+
+<div class="container">
+
+<div class="section-head center">
+
+<div class="label">Nastavnici</div>
+
+<h2>
+Profesionalan pristup
+i kvalitetan rad.
+</h2>
+
+<p>
+Časove vode nastavnici koji se posvećuju
+radu sa učenicima i njihovoj pripremi.
+</p>
+
+</div>
+
+<div class="teacher-grid">
 
 <div class="teacher">
 
@@ -618,21 +817,18 @@ redovno vežbanje i što bolju pripremu učenika.
 OŠ
 </div>
 
-<div>
-<strong>Olivera Šapar</strong>
-<span>Srpski jezik</span>
+<h3>Olivera Šapar</h3>
+
+<div class="subject-name">
+Srpski jezik
 </div>
 
-</div>
-
-<p style="margin-top:20px">
-Časovi srpskog jezika sa fokusom na
-gradivo, zadatke i testove za prijemni.
+<p>
+Priprema iz srpskog jezika kroz
+objašnjenje gradiva, zadatke i testove.
 </p>
 
 </div>
-
-<div class="card">
 
 <div class="teacher">
 
@@ -640,220 +836,200 @@ gradivo, zadatke i testove za prijemni.
 NC
 </div>
 
-<div>
-<strong>Nataša Caprić</strong>
-<span>Matematika</span>
+<h3>Nataša Caprić</h3>
+
+<div class="subject-name">
+Matematika
 </div>
-
-</div>
-
-<p style="margin-top:20px">
-Priprema iz matematike kroz zadatke,
-vežbu i rad na testovima.
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">★</div>
-
-<h3>
-Profesionalan pristup
-</h3>
 
 <p>
-Cilj je da učenik ne uči napamet,
-već da razume gradivo i bude sigurniji
-u rešavanju zadataka.
+Priprema iz matematike kroz
+sistematičan rad, zadatke i testove.
 </p>
 
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<section class="test-section" id="testovi">
+<section class="tests" id="testovi">
 
 <div class="container">
 
 <div class="section-head center">
 
-<div class="label">
-Praktičan rad
-</div>
+<div class="label">Praktičan rad</div>
 
 <h2>
-Ne učimo samo teoriju.
-Radimo testove.
+Vežbamo. Rešavamo.
+Proveravamo znanje.
 </h2>
 
 <p>
-Učenici kroz časove rade konkretne
-zadatke i testove kako bi se navikli
-na način rada koji ih očekuje.
+Na časovima se ne svodi sve samo na teoriju.
+Veliki deo pripreme čine zadaci i testovi.
 </p>
 
 </div>
 
-<div class="test-box">
+<div class="test-grid">
 
 <div class="test-card">
+
 <h3>📝 Testovi</h3>
+
 <p>
-Redovno rešavanje testova omogućava
-učenicima da provere svoje znanje,
-uoče greške i rade na oblastima
-koje im predstavljaju problem.
+Učenici rade testove kako bi proverili
+svoje znanje i navikli se na rešavanje
+zadataka u određenom vremenu.
 </p>
+
 </div>
 
 <div class="test-card">
-<h3>🎯 Fokus na prijemni</h3>
+
+<h3>🎯 Analiza grešaka</h3>
+
 <p>
-Časovi su usmereni na ono što je
-učeniku potrebno da bi što spremnije
-dočekao prijemni ispit.
+Greške su deo učenja. Kroz rad na zadacima
+učenici mogu da uoče šta im predstavlja
+problem i da dodatno vežbaju.
 </p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<section>
+<section class="schedule">
 
 <div class="container">
 
 <div class="section-head center">
 
-<div class="label">
-Organizacija
-</div>
+<div class="label">Organizacija</div>
 
 <h2>
-Čas traje 1 sat i 30 minuta.
+Pripreme prilagođene učenicima.
 </h2>
 
-<p>
-Dovoljno vremena za objašnjenje,
-vežbanje i rad na zadacima.
-</p>
-
 </div>
 
-<div class="schedule">
+<div class="schedule-grid">
 
 <div class="schedule-card">
-<strong>⏱ Trajanje</strong>
-<h3>90 minuta</h3>
-<p>
-Jedan čas traje sat i po.
-</p>
-</div>
 
-<div class="schedule-card">
-<strong>📅 Vikend</strong>
-<h3>Časovi i vikendom</h3>
+<div class="big">90 min</div>
+
+<h3>Trajanje časa</h3>
+
 <p>
-Pripreme se održavaju i tokom vikenda.
+Jedan čas traje 1 sat i 30 minuta.
 </p>
+
 </div>
 
 <div class="schedule-card">
-<strong>📚 Program</strong>
-<h3>Prijemni + testovi</h3>
+
+<div class="big">Vikendom</div>
+
+<h3>Fleksibilni termini</h3>
+
 <p>
-Gradivo, zadaci i testovi kroz pripremu.
+Časovi se održavaju i vikendom.
 </p>
+
+</div>
+
+<div class="schedule-card">
+
+<div class="big">3 oblasti</div>
+
+<h3>Širok izbor</h3>
+
+<p>
+Srpski, matematika i izborni predmeti.
+</p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<section class="location">
+<section class="location" id="lokacija">
 
-<div class="container location-box">
+<div class="container location-grid">
 
 <div>
 
-<div class="label">
-Lokacija
-</div>
+<div class="label">Lokacija</div>
 
 <h2>
-Vidimo se u
+Pripreme na
 Novom Beogradu.
 </h2>
 
-<p>
-Pripreme se održavaju u
-Bloku 70 na Novom Beogradu.
+<p class="location-text">
+Nalazimo se u Bloku 70 na Novom Beogradu.
+Lako nas možeš pronaći i doći na pripreme.
 </p>
 
 <a
-class="btn btn-primary"
 href="https://www.google.com/maps/search/?api=1&query=Blok+70+Novi+Beograd"
-target="_blank">
+target="_blank"
+class="btn btn-primary">
 Otvori lokaciju →
 </a>
 
 </div>
 
-<div class="location-info">
+<div class="location-box">
 
-<h3>
-📍 Blok 70
-</h3>
+<h3>📍 Blok 70</h3>
 
 <p>
-Novi Beograd, Beograd
+Novi Beograd
 </p>
 
 <div class="phone">
 062 965 6676
 </div>
 
-<p>
-Za informacije o terminima,
-predmetima i prijavi pozovite
-navedeni broj telefona.
-</p>
-
-<a
-class="btn btn-primary"
-href="tel:0629656676">
+<a href="tel:0629656676" class="btn btn-primary">
 Pozovi odmah
 </a>
 
 </div>
 
 </div>
+
 </section>
 
 <section class="contact" id="kontakt">
 
 <div class="container">
 
-<div class="label" style="color:#cddaff">
-Kontakt
-</div>
+<div class="label">Kontakt</div>
 
 <h2>
 Spremni za prijemni?
 </h2>
 
 <p>
-Pozovite i raspitajte se o terminima,
-predmetima i mogućnosti prijave
-za pripreme.
+Za više informacija o terminima,
+predmetima i prijavi pozovite nas.
 </p>
 
-<a
-class="btn btn-light"
-href="tel:0629656676">
+<a href="tel:0629656676" class="btn btn-white">
 📞 062 965 6676
 </a>
 
@@ -861,12 +1037,16 @@ href="tel:0629656676">
 
 </section>
 
-</main>
-
 <footer>
+
 <div class="container">
-© 2026 Pripreme za prijemni · Novi Beograd · Blok 70
+
+<strong>Pripreme Učionica</strong><br>
+Pripreme za prijemni na Novom Beogradu · Blok 70<br><br>
+© 2026 Pripreme Učionica
+
 </div>
+
 </footer>
 
 </body>
